@@ -1,0 +1,27 @@
+body {
+    --font-smallest: 0.8em;
+    --font-smaller: 0.875em;
+    --font-small: 0.933em;
+}
+
+.markdown-rendered  pre {
+    --code-white-space: pre;
+    white-space: var(--code-white-space);
+}
+
+.markdown-reading-view code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: var(--code-size);
+}
+
+.markdown-reading-view pre:not(:has([class*="language-"])) > code {
+    --line-height-normal: 0.5rem;
+    line-height: var(--line-height-normal);
+    /* background: white; */
+}
+
+.markdown-reading-view pre button.copy-code-button {
+    cursor: pointer;
+    position: absolute;
+    right: 0em;
+}

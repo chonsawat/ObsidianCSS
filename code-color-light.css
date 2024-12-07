@@ -1,0 +1,19 @@
+.theme-light .markdown-reading-view  code {
+    /* color: rgb(162, 232, 241); */
+    /* color: var(--color-accent); */
+    /* color: var(--color-green); */
+    /* color: var(--color-cyan); */
+    color: var(--green);
+}
+
+/* .theme-light .markdown-reading-view {
+    --code-background: rgba(29, 28, 28, 0.932);
+} */
+
+.markdown-source-view {
+    --code-normal: rgb(243, 243, 243);
+}
+
+.theme-dark .markdown-source-view,.theme-light .markdown-source-view {
+    --code-normal: rgb(114, 114, 114);
+}
