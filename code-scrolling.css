@@ -1,0 +1,15 @@
+body {
+    --code-height: 30rem;
+}
+
+.markdown-rendered pre:has([class*="language-"]) > code {
+    max-height: var(--code-height);
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+.markdown-rendered pre:not(:has([class*="language-"])) > code {
+    max-height: var(--code-height);
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
