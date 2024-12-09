@@ -13,3 +13,9 @@ body {
     overflow-x: scroll;
     overflow-y: scroll;
 }
+
+.markdown-rendered pre:has(code) {
+    max-height: var(--code-height);
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
