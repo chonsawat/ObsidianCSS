@@ -9,6 +9,10 @@ body {
     white-space: var(--code-white-space);
 }
 
+.markdown-rendered pre:has([class*="language-"]) > code {
+    white-space: pre;
+}
+
 .markdown-reading-view code {
     font-family: 'Courier New', Courier, monospace;
     font-size: var(--code-size);
