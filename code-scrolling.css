@@ -4,6 +4,8 @@ body {
     --MB_overflow-y : scroll;
 }
 
+/* for specific language
+
 .markdown-rendered pre:has([class*="language-"]) > code {
     max-height: var(--code-height);
     overflow-x: var(--MB_overflow-x);
@@ -15,6 +17,16 @@ body {
     overflow-x: var(--MB_overflow-x);
     overflow-y: var(--MB_overflow-y);
 }
+
+.markdown-rendered pre:has([class*="language-"]) > code {
+    overflow-x: auto;
+}
+
+.markdown-rendered pre:not(:has([class*="language-"])) > code {
+    overflow-x: auto;
+}
+
+*/
 
 .markdown-rendered pre:has(code) {
     max-height: var(--code-height);
