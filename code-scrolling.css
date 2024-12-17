@@ -1,21 +1,27 @@
 body {
     --code-height: 30rem;
+    --MB_overflow-x : hidden;
+    --MB_overflow-y : scroll;
 }
 
 .markdown-rendered pre:has([class*="language-"]) > code {
     max-height: var(--code-height);
-    overflow-x: scroll;
-    overflow-y: scroll;
+    overflow-x: var(--MB_overflow-x);
+    overflow-y: var(--MB_overflow-y);
 }
 
 .markdown-rendered pre:not(:has([class*="language-"])) > code {
     max-height: var(--code-height);
-    overflow-x: scroll;
-    overflow-y: scroll;
+    overflow-x: var(--MB_overflow-x);
+    overflow-y: var(--MB_overflow-y);
 }
 
 .markdown-rendered pre:has(code) {
     max-height: var(--code-height);
-    overflow-x: scroll;
-    overflow-y: scroll;
+    overflow-x: var(--MB_overflow-x);
+    overflow-y: var(--MB_overflow-y);
+}
+
+.markdown-rendered pre:has(code):hover {
+    overflow-x: auto;
 }
