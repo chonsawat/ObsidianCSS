@@ -1,16 +1,18 @@
 body {
     --font-smallest: 0.8em;
-    --font-smaller: 0.875em;
+    /* --font-smaller: 0.875em; */
+    --font-smaller: 0.775em;
     --font-small: 0.933em;
 }
 
 .markdown-rendered  pre {
-    --code-white-space: pre;
+    --code-white-space: preserve nowrap;
     white-space: var(--code-white-space);
 }
 
 .markdown-rendered pre:has([class*="language-"]) > code {
-    white-space: pre;
+    /* white-space: pre; */
+    white-space: preserve nowrap;
 }
 
 .markdown-reading-view code {
@@ -29,3 +31,30 @@ body {
     position: absolute;
     right: 0em;
 }
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+    --code-normal: rgba(240, 255, 255, 0.767);
+    --code-keyword: aqua;
+    --code-value: white;
+}
+
+/* div.cm-content.cm-lineWrapping .markdown-source-view .cm-line.HyperMD-codeblock {
+    background: #a80d0d;
+    color: #a80d0d;
+}  */
+
+
+
+/* .markdown-source-view .cm-line.HyperMD-codeblock {
+    background: #a80d0d;
+    color: #a80d0d;
+    white-space: preserve nowrap; 
+    overflow-x:  scroll;
+}  */
+
+/* .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock > * {
+    background: blue;
+    white-space: preserve nowrap;
+    overflow-x: auto;
+    display: inline-block;
+} */
