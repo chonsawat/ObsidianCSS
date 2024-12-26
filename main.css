@@ -11,13 +11,22 @@
     /* --background-secondary: #1b1b1b; */
 }
 
-a.tag {
+.theme-light a.tag {
+    --tag-color : azure;
+    --tag-background: rgb(11, 102, 155);
+}
+
+.theme-dark a.tag {
     --tag-color : azure;
     --tag-background: maroon;
 }
 
 a {
-    color: var(--code-property);
+    --link-decoration : blink;
+}
+
+.theme-dark a:not(tag) {
+    --link-color : var(--code-property);
 }
 
 /* Tag for edit mode */
