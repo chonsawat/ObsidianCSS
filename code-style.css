@@ -32,8 +32,8 @@ body {
     right: 0em;
 }
 
-.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
-    --code-normal: rgba(240, 255, 255, 0.767);
+.theme-dark .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+    --code-normal: white;
     --code-keyword: aqua;
     --code-value: white;
 }
