@@ -36,6 +36,7 @@ body {
     --code-normal: white;
     --code-keyword: aqua;
     --code-value: white;
+    white-space: preserve nowrap;
 }
 
 /* div.cm-content.cm-lineWrapping .markdown-source-view .cm-line.HyperMD-codeblock {

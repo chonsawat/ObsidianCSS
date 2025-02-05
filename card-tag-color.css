@@ -1,0 +1,103 @@
+/* Theme both for edit mode */
+body {
+    --tag-tx: white;
+    --tag-bg: black;
+
+    --tag-bg-yellow: #d4ac26;
+    --tag-tx-gray: gray;
+    --tag-bg-gray: azure;
+    --tag-bg-blue: #2b7bd8;
+    --tag-bg-green: #39aa4c;
+    --tag-bg-red: maroon;
+    
+    --tag-bg-source-control: rgb(173, 15, 89);
+}
+
+
+span.cm-hashtag.cm-meta.cm-tag-Todo {
+    --tag-color: white;
+    --tag-background: var(--tag-bg-red) !important;
+}
+
+span.cm-hashtag.cm-meta.cm-tag-Done {
+    --tag-color: white;
+    --tag-background: var(--tag-bg-green) !important;
+}
+
+span.cm-hashtag.cm-meta.cm-tag-GHB,
+span.cm-hashtag.cm-meta.cm-tag-Doing {
+    --tag-color: white;
+    --tag-background: var(--tag-bg-yellow) !important;
+}
+
+span.cm-hashtag.cm-meta.cm-tag-KKP {
+    --tag-color: white;
+    --tag-background: var(--tag-bg-blue) !important;
+}
+
+span.cm-hashtag.cm-meta.cm-tag-OtherDev {
+    --tag-color: var(--tag-tx-gray) !important;
+    --tag-background: var(--tag-bg-gray) !important;
+}
+
+span.cm-hashtag.cm-meta.cm-tag-Develop,
+span.cm-hashtag.cm-meta.cm-tag-VIT,
+span.cm-hashtag.cm-meta.cm-tag-Testing_VIT,
+span.cm-hashtag.cm-meta.cm-tag-SIT,
+span.cm-hashtag.cm-meta.cm-tag-Testing_SIT,
+span.cm-hashtag.cm-meta.cm-tag-UAT,
+span.cm-hashtag.cm-meta.cm-tag-Request_UAT,
+span.cm-hashtag.cm-meta.cm-tag-Request_Prod,
+span.cm-hashtag.cm-meta.cm-tag-PreProd,
+span.cm-hashtag.cm-meta.cm-tag-Production,
+span::content("text")[text="Testing_VIT"].cm-hashtag.cm-meta
+{
+    --tag-color: var(--tag-tx) !important;
+    --tag-background: var(--tag-bg-source-control) !important;
+}
+
+/* Theme for preview mode */
+.theme-dark,.theme-light {
+
+    .tag[href^="#KKP"],
+    .tag[href^="#Silverlake"] 
+    {
+        --tag-color: white;
+        --tag-background: var(--tag-bg-blue);
+    }
+    
+    .tag[href^="#Done"] {
+        --tag-color: white;
+        --tag-background: var(--tag-bg-green);
+    }
+    
+    .tag[href^="#GHB"],
+    .tag[href^="#Doing"] {
+        --tag-color: white;
+        --tag-background: var(--tag-bg-yellow);
+    }
+
+    .tag[href^="#OtherDev"] {
+        --tag-color: var(--tag-tx-gray);
+        --tag-background: var(--tag-bg-gray);
+}
+    
+    .tag[href^="#Develop"],
+    .tag[href^="#VIT"],
+    .tag[href^="#Testing_VIT"],
+    .tag[href^="#SIT"],
+    .tag[href^="#Testing_SIT"],
+    .tag[href^="#UAT"],
+    .tag[href^="#Request_UAT"],
+    .tag[href^="#Request_Prod"],
+    .tag[href^="#PreProd"],
+    .tag[href^="#Production"] 
+    {
+        --tag-color: white;
+        --tag-background: var(--tag-bg-source-control);
+    }
+}
+
+/* .theme-dark for dark mode */
+/* ..theme-light for light mode */
+
