@@ -21,7 +21,7 @@ body {
 }
 
 .markdown-reading-view pre:not(:has([class*="language-"])) > code {
-    --line-height-normal: 0.5rem;
+    /* --line-height-normal: 0.5rem; */
     line-height: var(--line-height-normal);
     /* background: white; */
 }
