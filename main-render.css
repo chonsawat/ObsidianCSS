@@ -12,3 +12,25 @@ h1, h2, h3, h4, h5, h6 {
 ul.has-list-bullet, .el-ol > ol {
     margin: 0 0 1.5rem 0;
 }
+
+body {
+    --embed-max-height: 350px;
+}
+
+/* Recolors images on the page with the current accent color. */
+img:not(:hover) {
+    filter: blur(0.5px)
+}
+
+.recolor-images img:not(:hover) {
+    filter: grayscale(100%);
+}
+
+.blur img:not(:hover) {
+    filter: blur(3px);
+}
+
+.recolor-images.blur img:not(:hover), 
+.blur.recolor-images img:not(:hover) {
+    filter: grayscale(100%) blur(3px);
+}
