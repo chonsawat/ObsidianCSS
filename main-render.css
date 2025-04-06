@@ -1,0 +1,14 @@
+.markdown-rendered p {
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+    unicode-bidi: plaintext;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-block-start: var(--p-spacing);
+    margin-block-end: 0rem;
+}
+
+ul.has-list-bullet, .el-ol > ol {
+    margin: 0 0 1.5rem 0;
+}

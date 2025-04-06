@@ -1,0 +1,19 @@
+/* For Obsidian 0.9.22 and up */
+/* These lines make every image the same height */
+/* .img-grid .markdown-preview-section > div > .internal-embed img:not(:active) {
+    object-fit:cover;
+    height:100%;
+} */
+
+.img-grid .markdown-preview-section > div > p > .internal-embed img {
+    object-fit:cover;
+    height: 100%;
+}
+
+.img-grid .markdown-preview-section > div > p > span.internal-embed {
+    height: 95%;
+}
+
+.img-grid .markdown-preview-section > div > p:has(.internal-embed) {
+    background-color: transparent;
+}

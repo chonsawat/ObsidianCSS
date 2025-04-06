@@ -1,0 +1,40 @@
+/* CyanVoxel's General Tweaks */
+
+.theme-light,
+.theme-dark {
+  --link-decoration: none;
+}
+
+img {
+  border: solid;
+  border-width: 1px;
+  border-radius: 20px;
+  border-color: rgba(255, 255, 255, 0.664);
+}
+
+.no-embed-border {
+  --embed-border-left: 0px solid black !important;
+}
+
+/* .markdown-preview-view */
+.markdown-preview-view {
+  border-radius: 6px;
+}
+
+.center-titles
+  :is(
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .HyperMD-header.HyperMD-header-1,
+    .HyperMD-header.HyperMD-header-2,
+    .HyperMD-header.HyperMD-header-3,
+    .HyperMD-header.HyperMD-header-4,
+    .HyperMD-header.HyperMD-header-5,
+    .HyperMD-header.HyperMD-header-6
+  ) {
+  text-align: center;
+}
