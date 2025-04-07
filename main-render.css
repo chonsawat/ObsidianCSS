@@ -22,6 +22,16 @@ img:not(:hover) {
     filter: blur(0.5px)
 }
 
+.pen-black img {
+    filter: brightness(0) saturate(100%) invert(14%) sepia(19%)
+      saturate(296%) hue-rotate(5deg) brightness(90%) contrast(96%);
+}
+
+.pen-white img {
+    filter: brightness(0) saturate(100%) invert(89%) sepia(1%)
+      saturate(2714%) hue-rotate(196deg) brightness(107%) contrast(98%);
+}
+
 .recolor-images img:not(:hover) {
     filter: grayscale(100%);
 }
@@ -30,7 +40,6 @@ img:not(:hover) {
     filter: blur(3px);
 }
 
-.recolor-images.blur img:not(:hover), 
-.blur.recolor-images img:not(:hover) {
+:is(.recolor-images):is(.blur) img:not(:hover) {
     filter: grayscale(100%) blur(3px);
 }

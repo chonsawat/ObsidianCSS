@@ -1,0 +1,27 @@
+body {
+  --h1-border-color: red;
+  --h2-border-color: orange;
+  --h3-border-color: yellow;
+  --h4-border-color: green;
+  --h5-border-color: limegreen;
+  --h6-border-color: lightblue;
+}
+
+.cm-header-1, .markdown-rendered h1 {
+  text-shadow: 2px 2px 5px var(--h1-border-color) !important;
+}
+.cm-header-2, .markdown-rendered h2 {
+  text-shadow: 2px 2px 5px var(--h2-border-color) !important;
+}
+.cm-header-3, .markdown-rendered h3 {
+  text-shadow: 2px 2px 5px var(--h3-border-color) !important;
+}
+.cm-header-4, .markdown-rendered h4 {
+  text-shadow: 2px 2px 5px var(--h4-border-color) !important;
+}
+.cm-header-5, .markdown-rendered h5 {
+  text-shadow: 2px 2px 5px var(--h5-border-color) !important;
+}
+.cm-header-6, .markdown-rendered h6 {
+  text-shadow: 2px 2px 5px var(--h6-border-color) !important;
+}
