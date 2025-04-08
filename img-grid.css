@@ -18,3 +18,7 @@
 .img-grid .markdown-preview-section > div > p:has(.internal-embed) {
     background-color: transparent;
 }
+
+.fc.fc-media-screen.fc-direction-ltr.fc-theme-standard {
+    font-size: .85rem;
+}
