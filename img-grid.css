@@ -8,6 +8,7 @@
 .img-grid .markdown-preview-section > div > p > .internal-embed img {
     object-fit:cover;
     height: 100%;
+    border-radius: 0.5rem;
 }
 
 .img-grid .markdown-preview-section > div > p > span.internal-embed {
